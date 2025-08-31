@@ -1,0 +1,5 @@
+# Zugriff auf sensible Ordner verhindern
+RewriteRule ^(lib|inc)/ - [F,L]
+<Files "config.php">
+  Require all denied
+</Files>
